@@ -1,0 +1,57 @@
+@import "./../variables/variable";
+
+.border,
+.border-bottom,
+.border-left,
+.border-right,
+.border-surround,
+.border-top,
+.border-top-bottom {
+  position: relative;
+}
+
+.border-bottom::after,
+.border-left::after,
+.border-right::after,
+.border-surround::after,
+.border-top-bottom::after,
+.border-top::after,
+.border::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  right: -50%;
+  bottom: -50%;
+  -webkit-transform: scale(.5);
+  transform: scale(.5);
+  pointer-events: none;
+  box-sizing: border-box;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  border: 0 solid $border-color
+}
+
+.border-top::after {
+  border-top-width: 2px;
+}
+
+.border-left::after {
+  border-left-width: 2px;
+}
+
+.border-right::after {
+  border-right-width: 2px;
+}
+
+.border-bottom::after {
+  border-bottom-width: 2px;
+}
+
+.border-top-bottom::after {
+  border-width: 2px 0;
+}
+
+.border-surround::after {
+  border-width: 2px;
+}

@@ -1,0 +1,9 @@
+.radius-none {
+  border-radius: 0;
+}
+
+@for $i from 0 through 10 {
+  .radius-#{$i} {
+    border-radius: 10px * $i;
+  }
+}

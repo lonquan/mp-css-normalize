@@ -1,0 +1,15 @@
+{
+    "name": "mp-normalize-css",
+    "version": "1.0.0",
+    "description": "微信小程序 CSS 初始化",
+    "main": "index.js",
+    "repository": "git@github.com:lonquan/mp-css-normalize.git",
+    "author": "lonquan",
+    "license": "MIT",
+    "scripts": {
+        "build": "./node_modules/node-sass/bin/node-sass ./src/style/index.scss ./dist/style/index.css --output-style compressed"
+    },
+    "dependencies": {
+        "node-sass": "^4.13.1"
+    }
+}
