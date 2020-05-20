@@ -33,25 +33,25 @@
 }
 
 .border-top::after {
-  border-top-width: 2px;
+  border-top-width: 1px;
 }
 
 .border-left::after {
-  border-left-width: 2px;
+  border-left-width: 1px;
 }
 
 .border-right::after {
-  border-right-width: 2px;
+  border-right-width: 1px;
 }
 
 .border-bottom::after {
-  border-bottom-width: 2px;
+  border-bottom-width: 1px;
 }
 
 .border-top-bottom::after {
-  border-width: 2px 0;
+  border-width: 1px 0;
 }
 
 .border-surround::after {
-  border-width: 2px;
+  border-width: 1px;
 }
